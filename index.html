@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Rock-Paper-Scissors</title>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"
+    />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onresize="mediaQuery()">
+    <div class="container">
+      <div id="title">
+        Rock Paper Scissors
+      </div>
+      <div id="score-board">0 | 0</div>
+      <div id="clash-box">
+        <div id="user">
+          <strong>You</strong><br /><br />
+          <i id="clash-user-icon" class="far fa-hand-rock fa-6x rps-icon"></i>
+        </div>
+        <div id="count-down">-</div>
+        <div id="opponent">
+          <strong>Opponent</strong><br /><br />
+          <i
+            id="clash-opponent-icon"
+            class="far fa-hand-rock fa-6x rps-icon"
+          ></i>
+        </div>
+      </div>
+      <div class="input-group">
+        <input type="button" value="PLAY" id="play-btn" class="btn" />
+      </div>
+      <div class="input-group">
+        <input type="button" value="AGAIN" id="again-btn" class="btn" />
+      </div>
+      <div id="rps-box" class="container">
+        <div>
+          <a href="#" id="rock" class="rps" onclick="choose(this.id)"
+            ><i class="far fa-hand-rock fa-6x rps-icon"></i
+          ></a>
+        </div>
+        <div>
+          <a href="#" id="paper" class="rps" onclick="choose(this.id)"
+            ><i class="far fa-hand-paper fa-6x rps-icon"></i
+          ></a>
+        </div>
+        <div>
+          <a href="#" id="scissors" class="rps" onclick="choose(this.id)"
+            ><i class="far fa-hand-scissors fa-6x rps-icon"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

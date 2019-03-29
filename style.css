@@ -1,0 +1,144 @@
+body {
+  margin: 0 40px;
+  padding: 0 40px;
+  font-family: "Open Sans", sans-serif;
+  background: rgba(255, 255, 255, 1);
+  background: -moz-linear-gradient(
+    left,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(246, 246, 246, 1) 47%,
+    rgba(237, 237, 237, 1) 100%
+  );
+  background: -webkit-gradient(
+    left top,
+    right top,
+    color-stop(0%, rgba(255, 255, 255, 1)),
+    color-stop(47%, rgba(246, 246, 246, 1)),
+    color-stop(100%, rgba(237, 237, 237, 1))
+  );
+  background: -webkit-linear-gradient(
+    left,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(246, 246, 246, 1) 47%,
+    rgba(237, 237, 237, 1) 100%
+  );
+  background: -o-linear-gradient(
+    left,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(246, 246, 246, 1) 47%,
+    rgba(237, 237, 237, 1) 100%
+  );
+  background: -ms-linear-gradient(
+    left,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(246, 246, 246, 1) 47%,
+    rgba(237, 237, 237, 1) 100%
+  );
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(246, 246, 246, 1) 47%,
+    rgba(237, 237, 237, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=1 );
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#title {
+  width: 100%;
+  margin: 20px 0 40px 0;
+  font-size: 2rem;
+}
+
+#score-board {
+  width: 100%;
+  margin: 0 0 40px 0;
+  font-size: 1.5rem;
+}
+
+#clash-box {
+  display: none;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+#count-down {
+  font-size: 5rem;
+}
+
+#rps-box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.rps i {
+  width: 150px;
+  height: 150px;
+  line-height: 150px;
+  border-radius: 50%;
+  background: #d8bd82;
+}
+
+.rps:hover {
+  color: #ffffff;
+  transition: 0.3s;
+}
+
+.input-group {
+  margin-top: 40px;
+}
+
+#play-btn {
+  display: none;
+}
+
+#again-btn {
+  display: none;
+}
+
+.btn {
+  width: 400px;
+  height: 40px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  background: #fff;
+}
+
+@media only screen and (max-width: 680px) {
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    line-height: 100%;
+  }
+  #title {
+    font-size: 1rem;
+    width: 100%;
+  }
+
+  .rps i {
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border: 2px solid black;
+  }
+
+  #play-btn {
+    width: 50%;
+  }
+
+  #again-btn {
+    width: 50%;
+  }
+}
